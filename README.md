@@ -1,3 +1,9 @@
+Relocation
+==========
+
+Spec has been moved to SVN.
+
+
 Prerequisites
 =============
 
