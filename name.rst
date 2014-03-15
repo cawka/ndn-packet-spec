@@ -10,7 +10,7 @@ NDN Name Format
 
 We use a 2-level nested TLV to represent a name.
 The Type in the outer TLV indicates this is a Name.
-All inner TLVs have the same Type indicating that they each contain a name component.
+All inner TLVs have Type either NameComponent, NumberComponent, or ImplicitSha256DigestComponent, indicating that the name component is a generic name component, number, or implicit digest.
 There is no restriction on the Value field in a name component and it may not contain any bytes:
 
 ::
