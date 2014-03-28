@@ -52,8 +52,6 @@ Please refer to RFC 3986 (URI Generic Syntax) for background.
     When producing a URI from an NDN Name, only the generic URI unreserved characters are left unescaped.
     These are the US-ASCII upper and lower case letters (A-Z, a-z), digits (0-9), and the four specials PLUS (+), PERIOD (.), UNDERSCORE (\_), and HYPHEN (-).
     All other characters are escaped using either the percent-encoding method of the URI Generic Syntax.
-    Once an EQUALS has been encountered in a component the hexadecimal encoding persists until the end of the component.
-    The hex digits in these escaped encodings should always use upper-case letters, i.e., A-Z.
 
     To unambiguously represent name components that would collide with the use of . and .. for relative URIs, any component that consists solely of one or more periods is encoded using three additional periods.
 
